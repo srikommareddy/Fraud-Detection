@@ -20,7 +20,15 @@ st.markdown("Enter transaction details below to predict whether it is **fraudule
 # --- Input fields ---
 TransactionAmount = st.number_input("Transaction Amount", min_value=0.0, format="%.2f")
 TransactionType = st.selectbox("Transaction Type", ["Purchase", "Withdrawal", "Transfer", "Payment"])  # adjust as per data
-Location = st.selectbox("Transaction Location", ["City", "Suburban", "Rural"])  # adjust as per data
+Location = st.selectbox("Transaction Location", ['San Diego', 'Houston', 'Mesa', 'Raleigh', 'Atlanta',
+       'Oklahoma City', 'Seattle', 'Indianapolis', 'Detroit', 'Nashville',
+       'Albuquerque', 'Memphis', 'Louisville', 'Denver', 'Austin',
+       'Columbus', 'Los Angeles', 'Las Vegas', 'Fort Worth', 'Miami',
+       'Milwaukee', 'Baltimore', 'New York', 'San Francisco', 'San Jose',
+       'San Antonio', 'Philadelphia', 'Charlotte', 'Tucson', 'Chicago',
+       'Sacramento', 'Kansas City', 'Omaha', 'Virginia Beach', 'Dallas',
+       'Boston', 'Jacksonville', 'Phoenix', 'Washington', 'El Paso',
+       'Colorado Springs', 'Fresno', 'Portland'])  # adjust as per data
 Channel = st.selectbox("Transaction Channel", ["Online", "ATM", "Branch"])  # adjust as per data
 CustomerAge = st.slider("Customer Age", 18, 100, step=1)
 CustomerOccupation = st.selectbox("Customer Occupation", ["Engineer", "Teacher", "Doctor", "Student", "Business"])  # adjust
